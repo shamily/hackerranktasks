@@ -1,15 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
-namespace FlippingBits
+namespace Solution
 {
-    class Program
+    public class Solution
     {
-        static void Main(string[] args)
+
+        public static int Process (int x)
         {
+            return x;
+        }
+
+        public static void Main(String[] args)
+        {
+            /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+
+            string s;
+            while ((s = Console.ReadLine()) != null)
+                Console.WriteLine(s);
+
+
         }
     }
+
 }
