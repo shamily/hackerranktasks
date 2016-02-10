@@ -7,20 +7,16 @@ namespace Solution
     public class Solution
     {
 
-        public static int Process (int x)
+        public static UInt32 Process (UInt32 x)
         {
-            return x;
+            return ~x;
         }
 
         public static void Main(String[] args)
         {
-            /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
-
-            string s;
+            string s = Console.ReadLine(); // Tests
             while ((s = Console.ReadLine()) != null)
-                Console.WriteLine(s);
-
-
+                Console.WriteLine(Process(UInt32.Parse(s)));
         }
     }
 

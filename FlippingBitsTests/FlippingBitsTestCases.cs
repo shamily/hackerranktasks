@@ -10,7 +10,9 @@ namespace FlippingBitsTests
         [TestMethod]
         public void ReturnPositive()
         {
-            Assert.AreEqual(10, Solution.Solution.Process(10));
+            Assert.AreEqual(4294967294, Solution.Solution.Process(1));
+            Assert.AreEqual(2147483648, Solution.Solution.Process(2147483647));
+            Assert.AreEqual(4294967295, Solution.Solution.Process(0));
         }
-}
+    }
 }
